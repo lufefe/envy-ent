@@ -1,5 +1,9 @@
 .contact-wrapper{
-	background-color: #52697a18;;
+	background: linear-gradient( to right, #ffffff 0%, #ffffff 50%,  #78B9EB 50%, #78B9EB 100% );
+}
+
+#contact{
+	margin-left: 12px;
 }
 
 .social a{
@@ -35,31 +39,48 @@
 	justify-content: center;
 	align-items: center;
 	background-color: #ffffff;
-	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+	box-shadow: 2px 2px 30px rgb(0 0 0 / 40%);
 }
 .social a:hover{
 	color:#FF9811;
 	transition: all ease 0.3s;
 }
 .contact-box{
-	background: linear-gradient(90deg, #9DD7F5 0%, #78B9EB 100%);
+	background: linear-gradient(45deg, #FF9811 00%, #FF5023 180%);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 30px 30px;
-	box-shadow: 2px 0px 30px rgba(0,0,0,0.1);
+	box-shadow: 2px 0px 30px rgba(0,0,0,0.5);
 	border-radius: 1%;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 0.5; /* Firefox */
+	font-style: italic;
+  }
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: white;
+	opacity: 0.5; /* Firefox */
+	font-style: italic;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: white;
+	opacity: 0.5; /* Firefox */
+	font-style: italic;
+}
+
 .c-heading h1{
-	color: #313131;
+	color: #fff;
 	font-size: 2.5rem;
 	font-weight: lighter;
 	margin: 0px;
 	padding: 0px;
 }
 .c-heading p{
-	color:#1c2237;
+	color:#fff;
 	font-size: 0.8rem;
 	font-weight: lighter;
 	margin: 0px;
@@ -70,6 +91,7 @@
 	color: red;
 	font-size:x-small;
 	font-style: italic;
+	font-weight: bold;
 }
 .c-inputs{
 	margin: 15px 0px;
@@ -97,7 +119,7 @@
 	margin-bottom: 20px;
 	padding: 0px;
 	box-sizing: border-box;
-	color: #1c2237;
+	color: #fff;
 	display: flex;
 }
 .c-inputs input-error{
@@ -120,7 +142,7 @@
     overflow: auto; 
 	background-color: rgba(0,0,0,0.1);
 	border-bottom:1px solid rgb(71, 71, 71);
-	color: #1c2237;
+	color: #fff;
 	padding: 10px;
 	font-size: 10pt;
 	box-sizing: border-box;
@@ -155,7 +177,7 @@
 }
 .map{
 	filter: grayscale(0.2);
-	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.5);
 	border-radius: 1px;
 	margin-right: 10px;
 }

@@ -15,6 +15,7 @@ function Navbar() {
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+    
 
     const onMouseEnter = () => {
         if (window.innerWidth < 960) {
@@ -25,11 +26,7 @@ function Navbar() {
       };
     
       const onMouseLeave = () => {
-        if (window.innerWidth < 960) {
           setDropdown(false);
-        } else {
-          setDropdown(false);
-        }
       };
 
     const showButton = () => {
@@ -46,9 +43,7 @@ function Navbar() {
     }, []);
 
     window.addEventListener('resize', showButton);
-
-
-
+    
     const changeBackground = () => {
         if(window.scrollY >= 80){
             setNavbar(true);
@@ -59,7 +54,7 @@ function Navbar() {
     };
 
     window.addEventListener('scroll', changeBackground);
-
+    
     return (
         <>
             <nav className = {navbar ? 'navbar active' : 'navbar'}>

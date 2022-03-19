@@ -10,6 +10,7 @@ import Cards from '../components/Cards';
 function Home() {
   return (
     <div>
+      {window.scrollTo({ top: 0, left: 100, behavior: 'smooth' })}
       <Helmet>
         <title>Home | Envy Enterprises (Pty) Ltd.</title>
       </Helmet>

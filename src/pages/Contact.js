@@ -69,7 +69,6 @@ export default function Contact () {
     
     <div className='contact-wrapper'>
         <div className='contact-compensation'></div>
-        <div className='contact-compensation-fill'></div>
         <section id="contact">
           <div className="social">
             <Link to="#"><i className="fab fa-facebook-f"></i></Link>

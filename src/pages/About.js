@@ -2,27 +2,29 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../App.css';
 import './About.css';
-import about_page from '../assets/about_us2.svg';
+import envyLogo from '../assets/envylogononame.png';
 import mission from '../assets/mission.svg';
 import values from '../assets/values.svg';
 
 
  function About() {
+   
   return(
-
+    
     <>
+     {window.scrollTo({ top: 0, left: 100, behavior: 'smooth' })}
     <Helmet>
       <title>About | Envy Enterprises (Pty) Ltd.</title>
     </Helmet>
     
     <div className="about-page">
-        {window.scrollTo({ top: 0, left: 100, behavior: 'smooth' })}
+        <div className='about-compensation'></div>
         {/* About */}
         <div className="home__hero-section darkBg">
           <div className="container">
             <div className="row home_hero-row" style={{ display: 'flex', flexDirection: 'row' }}>
-              <div className="col" id="left">
-                <div className='home__hero-text-wrapper'>
+              <div className="col">
+                <div className='home__hero-text-wrapper' id='aboutText'>
                   <div className='top-line'>
                     <h1 className="heading"> About Us  </h1>
                     <p className="home__hero-subtitle">
@@ -32,9 +34,9 @@ import values from '../assets/values.svg';
                   </div>
                 </div>
               </div>
-              <div className="col" id="right">
+              <div className="col">
                 <div className='home__hero-img-wrapper'>
-                  <img src={about_page} alt='dashboard' className='home__hero-img' />
+                  <img src={envyLogo} alt='dashboard' className='home__hero-img' style = {{'margin-top': "-70px"}} />
                 </div>
               </div>
             </div>
@@ -42,12 +44,11 @@ import values from '../assets/values.svg';
         </div>
 
         {/* Mission */}
-
         <div className="home__hero-section" id="mission">
           <div className="container">
             <div className="row home_hero-row" style={{ display: 'flex', flexDirection: 'row-reverse' }}>
               <div className="col">
-                <div className='home__hero-text-wrapper'>
+                <div className='home__hero-text-wrapper' id='missionText'>
                   <div className='top-line'>
                     <h1 className="heading dark"> Mission  </h1>
                     <p className="home__hero-subtitle dark">
@@ -73,7 +74,7 @@ import values from '../assets/values.svg';
           <div className="container">
             <div className="row home_hero-row" style={{ display: 'flex', flexDirection: 'row' }}>
               <div className="col">
-                <div className='home__hero-text-wrapper'>
+                <div className='home__hero-text-wrapper' id='valuesText'>
                   <div className='top-line'>
                     <h1 className="heading"> Values </h1>
                     <p className="home__hero-subtitle">
@@ -92,7 +93,7 @@ import values from '../assets/values.svg';
               </div>
               <div className="col">
                 <div className='home__hero-img-wrapper'>
-                  <img src={values} alt='dashboard' className='home__hero-img' />
+                  <img src={values} alt='dashboard' className='home__hero-img' style = {{'margin-left': "150px"}}/>
                 </div>
               </div>
             </div>
