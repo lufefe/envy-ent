@@ -1,0 +1,234 @@
+.contact-wrapper{
+	background: linear-gradient( to right, #ffffff 0%, #ffffff 50%,  #78B9EB 50%, #78B9EB 100% );
+}
+
+#contact{
+	margin-left: 12px;
+}
+
+.social a{
+	padding: 20px;
+	color:#1c2237;
+	font-size:1.1rem;
+}
+#contact{
+	width: 100%;
+	height: 100vh;
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-compensation{
+    background: linear-gradient(90deg, #78B9EB 0%, #9DD7F5 100%);
+    height: 60px;
+    width: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
+    display: flex;
+    top: 0;
+	z-index: 99;
+  }
+
+
+.social{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 30px rgb(0 0 0 / 40%);
+}
+.social a:hover{
+	color:#FF9811;
+	transition: all ease 0.3s;
+}
+.contact-box{
+	background: linear-gradient(45deg, #FF9811 00%, #FF5023 180%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 30px;
+	box-shadow: 2px 0px 30px rgba(0,0,0,0.5);
+	border-radius: 1%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 0.5; /* Firefox */
+	font-style: italic;
+  }
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: white;
+	opacity: 0.5; /* Firefox */
+	font-style: italic;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: white;
+	opacity: 0.5; /* Firefox */
+	font-style: italic;
+}
+
+.c-heading h1{
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: lighter;
+	margin: 0px;
+	padding: 0px;
+}
+.c-heading p{
+	color:#fff;
+	font-size: 0.8rem;
+	font-weight: lighter;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.error{
+	color: red;
+	font-size:x-small;
+	font-style: italic;
+	font-weight: bold;
+}
+.c-inputs{
+	margin: 15px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.c-inputs{
+	margin: 15px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.c-inputs input{
+	width:250px;
+	height: 30px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,1);
+	outline: none;
+	margin-bottom: 20px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: #fff;
+	display: flex;
+}
+.c-inputs input-error{
+	width:250px;
+	height: 30px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,1);
+	outline: none;
+	margin-bottom: 20px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: red;
+	display: flex;
+}
+.c-inputs textarea{
+	width:250px !important;
+	height: 200px !important;
+	border-style: none; 
+    overflow: auto; 
+	background-color: rgba(0,0,0,0.1);
+	border-bottom:1px solid rgb(71, 71, 71);
+	color: #fff;
+	padding: 10px;
+	font-size: 10pt;
+	box-sizing: border-box;
+	vertical-align: bottom;
+}
+.c-inputs button{
+	width:200px;
+	height: 40px;
+	background-color: #FFFFFF;
+	border: none;
+	outline: none;
+	margin: 20px 0 0 20px ;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+	letter-spacing: 1px;
+}
+.c-inputs input:focus{
+	border-bottom: 1px solid #1c2237;
+	transition: all ease 0.5s;
+}
+.c-inputs textarea:focus{
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #1c2237;
+	transition: all ease 0.5s;
+	background-color: rgba(0,0,0,0.1);
+}
+.c-inputs button:hover{
+	cursor: pointer;
+}
+.c-inputs button:active{
+	transform: scale(1.02);
+}
+.map{
+	filter: grayscale(0.2);
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.5);
+	border-radius: 1px;
+	margin-right: 10px;
+}
+
+@media  screen and (max-width:1100px){
+	.map{
+		display: none;
+	}
+
+	#contact {
+		justify-content: center;
+	}
+	
+}
+
+@media  screen and (max-width:720px){
+	.social{
+		display: none;
+	}
+
+	.contact-box{
+		width: 100%;
+		height: 100vh;
+		box-sizing: border-box;
+		background-color: #313131;
+	}
+	#contact{
+		position: static;
+		transform: translate(0,0);
+		width:100%;
+		margin: 0;
+		height: 100vh;
+		box-sizing: border-box;
+	}
+	.c-heading h1{
+		font-size: 2.2rem;
+		text-align: center;
+	}
+
+}
+
+@media  screen and (max-width:530px){
+
+	#contact{
+		text-align: -webkit-center;
+	}
+	
+}
+
+/* smaller than iPhone SE */
+@media  screen and (min-width:375px){
+	
+} 
+
