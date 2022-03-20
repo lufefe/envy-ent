@@ -6,6 +6,7 @@
         flex-direction: row;
         background: linear-gradient( to right, #ffffff 0%, #ffffff 50%,  #78B9EB 50%, #78B9EB 100% );
         align-items: center;
+        padding: 160px 0px 90px 0px ;
   }
 
   .portfolio-compensation{
@@ -16,8 +17,6 @@
     display: flex;
     top: 0;
     z-index: 99;
-    bottom: 50p
-    x;
   }
 
   .dropdown-menu li {
@@ -61,18 +60,16 @@
     font-weight: bold;
   }
 
-  @media  screen and (max-width:1430px){
-    .porfolio-image .portfolio{
-      display: none;
-    }
-    .portfolio-compensation-fill{
-      background-color: #fff;
-      height: 60px;
-  }
+  @media  screen and (max-width:1440px){
+
 
   }
 
   @media  screen and (max-width: 960px) {
+    .portfolio-container {
+      background: #fff;
+      display: inline;
+}
 
     .sub-logo-image {
       width: 170px;
@@ -91,6 +88,14 @@
     .portfolio-inner{
       display: block;
       text-align: center;
+    }
+    #logoCol{
+      display: none;
+    }
+    #portfolioCol{
+      flex: none;
+      max-width: 100%;
+      padding-top: 100px;
     }
   }
 

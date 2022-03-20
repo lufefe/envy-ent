@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../App.css';
 import './About.css';
-import envyLogo from '../assets/envylogononame.png';
+import envyLogo from '../assets/envylogoonly.png'
 import mission from '../assets/mission.svg';
 import values from '../assets/values.svg';
 
@@ -20,15 +20,14 @@ import values from '../assets/values.svg';
     <div className="about-page">
         <div className='about-compensation'></div>
         {/* About */}
-        <div className="home__hero-section darkBg">
-          <div className="container">
-            <div className="row home_hero-row" style={{ display: 'flex', flexDirection: 'row' }}>
+        <div className="home__hero-section darkBg" id = "about">
+            <div className="row home_hero-row">
               <div className="col">
                 <div className='home__hero-text-wrapper' id='aboutText'>
                   <div className='top-line'>
                     <h1 className="heading"> About Us  </h1>
                     <p className="home__hero-subtitle">
-                      Envy Enterprises (Pty) Ltd.is a tech holdings company that is comprised of cutting edge subsidiaries solving problems across multiple industries.<br /><br />
+                      Envy Enterprises (Pty) Ltd. is a tech holdings company that is comprised of cutting edge subsidiaries solving problems across multiple industries.<br /><br />
                       We focus mainly on e-Health, using the latest technologies to solve problems in healthcare systems. We also provide solutions and/or products in the following realms: CyberSecurity, A.I, Cloud and Data Mining.
                     </p>
                   </div>
@@ -36,17 +35,20 @@ import values from '../assets/values.svg';
               </div>
               <div className="col">
                 <div className='home__hero-img-wrapper'>
-                  <img src={envyLogo} alt='dashboard' className='home__hero-img' style = {{'margin-top': "-70px"}} />
+                  <img src={envyLogo} alt='dashboard' className='home__hero-img' id='about_logo'/>
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
         {/* Mission */}
         <div className="home__hero-section" id="mission">
-          <div className="container">
-            <div className="row home_hero-row" style={{ display: 'flex', flexDirection: 'row-reverse' }}>
+            <div className="row home_hero-row">
+            <div className="col">
+                <div className='home__hero-img-wrapper'>
+                  <img src={mission} alt='dashboard' className='home__hero-img' id='mission-image'/>
+                </div>
+              </div>
               <div className="col">
                 <div className='home__hero-text-wrapper' id='missionText'>
                   <div className='top-line'>
@@ -59,20 +61,13 @@ import values from '../assets/values.svg';
                   </div>
                 </div>
               </div>
-              <div className="col">
-                <div className='home__hero-img-wrapper'>
-                  <img src={mission} alt='dashboard' className='home__hero-img' />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
         {/* Values */}
 
         <div className="home__hero-section darkBg" id="values">
-          <div className="container">
-            <div className="row home_hero-row" style={{ display: 'flex', flexDirection: 'row' }}>
+            <div className="row home_hero-row">
               <div className="col">
                 <div className='home__hero-text-wrapper' id='valuesText'>
                   <div className='top-line'>
@@ -93,11 +88,10 @@ import values from '../assets/values.svg';
               </div>
               <div className="col">
                 <div className='home__hero-img-wrapper'>
-                  <img src={values} alt='dashboard' className='home__hero-img' style = {{'margin-left': "150px"}}/>
+                  <img src={values} alt='dashboard' className='home__hero-img' id='values-image'/>
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
       </div></>

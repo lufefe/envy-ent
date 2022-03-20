@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import HomeLogo from '../assets/envy_text_logo.png';
+import HomeLogo from '../assets/envytextlogowhite.png';
 import {Link} from 'react-router-dom' ;
 import './Navbar.css';
 import { Button } from './Button';

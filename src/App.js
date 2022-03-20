@@ -5,6 +5,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import PageNotFound from './pages/404';
 import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
 
 
@@ -17,10 +18,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' exact element={<Home />} />
-        <Route path='/about' exact element={<About/>} />
-        <Route path='/portfolio' exact element={<Portfolio/>} />
-        <Route path='/contact' exact element={<Contact/>} />
-        {/* <Route path='*' element={PageNotFound} /> */}
+        <Route path='/about' element={<About/>} />
+        <Route path='/portfolio' element={<Portfolio/>} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='*' element={<PageNotFound/>} />
       </Routes>
       <Footer /> 
     </Router>
