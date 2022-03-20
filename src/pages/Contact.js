@@ -5,12 +5,14 @@ import './Contact.css';
 import {Formik, Form, useField} from 'formik';
 import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from 'react-google-recaptcha'
 
 const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1421.9045677741533!2d28.050394312627127!3d-26.099731795514508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95733078e3703f%3A0x5c27913c1abd4efe!2s77%20Grayston%20Dr%2C%20Morningside%2C%20Sandton%2C%202057!5e0!3m2!1sen!2sza!4v1621199802241!5m2!1sen!2sza" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'; 
 
 function Iframe(props) {
     return (<div dangerouslySetInnerHTML={ {__html:  props.iframe?props.iframe:""}} />);
 };
+
 
 const CustomTextInput = ({label, ...props}) => {
   const [field, meta] = useField(props);
@@ -89,18 +91,21 @@ export default function Contact () {
               initialValues={{
                 fullname: '',
                 email: '',
-                message: ''
+                message: '',
+                recaptcha: '',
               }}
               validationSchema={Yup.object(
                 {
                   fullname: Yup.string().min(3, 'Can\'t be less than 2 characters').max(50, 'Can\'t be more than 50 characters').required('Name required'),
                   email: Yup.string().email('Email is invalid').required('Email required'),
-                  message: Yup.string().max(240, 'Max characters (240) reached').required('Message required')
+                  message: Yup.string().max(240, 'Max characters (240) reached').required('Message required'),
+                  recaptcha: Yup.string().required()
                 }
               )}
               onSubmit={(values, { setSubmitting, resetForm }) => {
                 setTimeout(() => {
                   resetForm();
+                  window.grecaptcha.reset();
                   setSubmitting(false);
                 }, 3000);
                 sendMail(values);
@@ -115,6 +120,14 @@ export default function Contact () {
                     <CustomEmailInput type="email" placeholder="example@gmail.com" name="email" />
                     <CustomMessageInput type="text" placeholder="Write Message" name="message" />
                     {/* <textarea type="text" placeholder="Write message" name="message" required="required"></textarea>  */}
+                    <ReCAPTCHA
+                      sitekey="6LdHd_YeAAAAAAZ_g5WN2b33R31LQ_got7FSGL-5"
+                      onChange={(value) => {
+                        // console.log("$$$$", props.isSubmitting, value);
+                        props.setFieldValue("recaptcha", value);
+                        props.setSubmitting(false);
+                      }}
+                    />
                     <button type='submit'>{props.isSubmitting ? 'SENDING...' : 'SEND'}</button>
                   </Form>
                 </div>)}
