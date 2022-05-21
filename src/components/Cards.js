@@ -2,6 +2,7 @@ import React from 'react';
 import './Cards.css';
 import '../App.css';
 import CardItem from './CardItem';
+import director from '../assets/director_square3.jpg'
 
 function Cards() {
   return (
@@ -11,11 +12,10 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
           <CardItem
-              src='https://images.generated.photos/cRrx9_KlI9o7fO5VsQtfrp7xlvwu4ns6hJFsMSKd14U/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Mjc0NTg0LmpwZw.jpg'
-              text='Mike Larry'
+              src={director}
+              text='Ayabonga Jumba'
               label='Director'
-              path='#'
-
+              path='https://www.linkedin.com/in/ayabonga-jumba/'
             />
             <CardItem
               src='https://images.generated.photos/YLEhKp8QcyZeVpv_UETPCiE34LXxkuEX7NBVP6IoIec/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODE1NDQxLmpwZw.jpg'
@@ -36,7 +36,6 @@ function Cards() {
               src='https://images.generated.photos/xUzsaeixbYIOcConYZmObLVivfAZmUtW4lznNkkzq9g/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTY1OTg2LmpwZw.jpg'
               text='Gloria Finn'
               label='Non-Executive Director'
-             
             />
           </ul>
           <ul className='cards__items'>
