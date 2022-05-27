@@ -5,9 +5,9 @@ function CardItem(props) {
     <>
 
       <li className='cards__item'>
-        <div className='cards__item__link' to={props.path}>
+        <div className='cards__item__link' >
           <figure className='cards__item__pic-wrap'>
-            <img alt='Team pics' src={props.src} className='cards__item__img'/>
+            <a href={props.path} target="_blank" rel="noreferrer"> <img className='cards__item__img' alt='Board of Directors pictures' src={props.src}/></a>
           </figure>
           <div className='cards__item__info'>
             <h5 className='cards__item__text'>{props.text}</h5>
