@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../App.css';
 import './About.css';
-import envyLogo from '../assets/envylogoonly.png'
+import envyLogo from '../assets/envylogonameblack.png'
 import mission from '../assets/mission.svg';
 import values from '../assets/values.svg';
 
@@ -78,10 +78,9 @@ import values from '../assets/values.svg';
                         <li>Integrity</li>
                         <li>Innovation</li>
                         <li>Ethics</li>
-                        <li>Trust</li>
                       </ul>
                       <br />
-                      We build trust to our clients and uphold integrity by following ethical data management standards.
+                      We uphold integrity by implementing ethical data management standards and policies.
                     </p>
                   </div>
                 </div>

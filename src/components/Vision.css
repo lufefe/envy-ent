@@ -2,7 +2,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #cbdde3a8;
 }
 
 a {
@@ -40,20 +40,8 @@ a {
 
 .main-img {
     position: relative;
+    transform: scale(10%);
     top: 100px;
-}
-@media screen {
-
-    .main-col-left p {
-        font-size: 1.3rem;
-    }
-
-    .main-img {
-        top: 280px;
-        left: 280px;
-        transform: scale(1.4);
-    }
-
 }
 
 @media screen and (max-width: 1880px) {
@@ -63,7 +51,7 @@ a {
     }
 
     .main-img {
-        top: 280px;
+        top: 240px;
         left: 280px;
         transform: scale(1.4);
     }
