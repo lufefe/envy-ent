@@ -1,9 +1,12 @@
 .contact-wrapper{
 	background: linear-gradient( to right, #ffffff 0%, #ffffff 50%,  #78B9EB 50%, #78B9EB 100% );
+	padding: 80px 0 50px 0;
 }
 
 #contact{
 	margin-left: 12px;
+	transform: scale(0.95);
+
 }
 
 .social a{
@@ -13,8 +16,7 @@
 }
 #contact{
 	width: 100%;
-	height: 100vh;
-	margin-top: 50px;
+	margin-bottom: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -59,24 +61,23 @@
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 	color: white;
 	opacity: 0.5; /* Firefox */
-	font-style: italic;
+	
   }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
 	color: white;
 	opacity: 0.5; /* Firefox */
-	font-style: italic;
+	
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
 	color: white;
 	opacity: 0.5; /* Firefox */
-	font-style: italic;
+	
 }
 
 .c-heading h1{
 	color: #fff;
 	font-size: 2.5rem;
-	font-weight: lighter;
 	margin: 0px;
 	padding: 0px;
 }
@@ -117,6 +118,7 @@
 	border: none;
 	border-bottom: 1px solid rgba(0,0,0,1);
 	outline: none;
+	font-size: 10pt;
 	margin-bottom: 20px;
 	padding: 0px;
 	box-sizing: border-box;
@@ -145,7 +147,7 @@
 	border-bottom:1px solid rgb(71, 71, 71);
 	color: #fff;
 	padding: 10px;
-	font-size: 10pt;
+	font-size: 12pt;
 	box-sizing: border-box;
 	vertical-align: bottom;
 	margin-bottom: 20px;
@@ -201,6 +203,9 @@
 	.social{
 		display: none;
 	}
+	.contact-wrapper{
+		margin: 0;
+	}
 
 	.contact-box{
 		width: 100%;
@@ -215,6 +220,9 @@
 		margin: 0;
 		height: 100vh;
 		box-sizing: border-box;
+	}
+	#contact-box{
+		padding-top: 90px;
 	}
 	.c-heading h1{
 		font-size: 2.2rem;

@@ -7,7 +7,7 @@ function PortfolioItem(props) {
           <div className="portfolio-content">
             <div className="portfolio-inner">
               <div className="sub-logo">
-                <a href='https://blorema.co.za' target='_blank' rel="noopener noreferrer">
+                <a href={props.url} target='_blank' rel="noopener noreferrer">
                   <img src={props.src} alt="subsidiary" className="sub-logo-image" />
                 </a>
               </div>

@@ -2,7 +2,6 @@ import React from 'react';
 import './Cards.css';
 import '../App.css';
 import CardItem from './CardItem';
-import director from '../assets/director_square3.jpg'
 
 function Cards() {
   return (
@@ -12,8 +11,8 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
           <CardItem
-              src={director}
-              text='Ayabonga Jumba'
+              src="https://images.generated.photos/17MKKrN-NRWAWW6pvM8jKEmVuW8T84fM7qrGXAsnysE/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MjQwODQ1LmpwZw.jpg"
+              text='Asavela Junction'
               label='Director'
               path='https://www.linkedin.com/in/ayabonga-jumba/'
             />

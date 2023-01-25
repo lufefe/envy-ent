@@ -1,12 +1,12 @@
   .portfolio-container {
-        overflow: hidden;
-        object-fit: contain;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        background: linear-gradient( to right, #ffffff 0%, #ffffff 50%,  #78B9EB 50%, #78B9EB 100% );
-        align-items: center;
-        padding: 160px 0px 90px 0px ;
+    overflow: hidden;
+    object-fit: contain;
+    padding-top: 80px;
+    display: flex;
+    background: linear-gradient( to right, #ffffffa8 0%, #ffffff 50%, #ffffff 50%, #ffffff 100% );
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
   }
 
   .portfolio-compensation{
@@ -19,13 +19,16 @@
     z-index: 99;
   }
 
+  .col h1{
+    text-align: center;
+  }
+
   .dropdown-menu li {
     background: black;
     cursor: pointer;
   }
 
   .sub-logo-image {
-    width: 150px;
     height: 150px;
     object-fit: cover;
     margin: 15px;
@@ -72,7 +75,6 @@
 }
 
     .sub-logo-image {
-      width: 170px;
       height: 170px;
     }
 
@@ -90,7 +92,9 @@
       text-align: center;
     }
     #logoCol{
-      display: none;
+      flex: none;
+      max-width: 100%;
+      padding-top: 100px;
     }
     #portfolioCol{
       flex: none;

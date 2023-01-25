@@ -68,9 +68,8 @@ export default function Contact () {
     <Helmet>
       <title>Contact | Envy Enterprises (Pty) Ltd.</title>
     </Helmet>
-    
+    <div className='contact-compensation'></div>
     <div className='contact-wrapper'>
-        <div className='contact-compensation'></div>
         <section id="contact">
           <div className="social">
             <Link to="#"><i className="fab fa-facebook-f"></i></Link>
@@ -96,9 +95,9 @@ export default function Contact () {
               }}
               validationSchema={Yup.object(
                 {
-                  fullname: Yup.string().min(3, 'Can\'t be less than 2 characters').max(50, 'Can\'t be more than 50 characters').required('Name required'),
-                  email: Yup.string().email('Email is invalid').required('Email required'),
-                  message: Yup.string().max(240, 'Max characters (240) reached').required('Message required'),
+                  fullname: Yup.string().min(3, '*Can\'t be less than 2 characters').max(50, '*Can\'t be more than 50 characters').required('*Name required'),
+                  email: Yup.string().email('*Email is invalid').required('*Email required'),
+                  message: Yup.string().max(240, '*Max characters (240) reached').required('*Message required'),
                   recaptcha: Yup.string().required()
                 }
               )}
