@@ -112,7 +112,7 @@
 }
 
 .c-inputs input{
-	width:250px;
+	width:350px;
 	height: 30px;
 	background-color: transparent;
 	border: none;
@@ -126,8 +126,7 @@
 	display: flex;
 }
 .c-inputs input-error{
-	width:250px;
-	height: 30px;
+
 	background-color: transparent;
 	border: none;
 	border-bottom: 1px solid rgba(0,0,0,1);
@@ -139,7 +138,7 @@
 	display: flex;
 }
 .c-inputs textarea{
-	width:250px !important;
+	width:350px !important;
 	height: 200px !important;
 	border-style: none; 
     overflow: auto; 
@@ -152,6 +151,9 @@
 	vertical-align: bottom;
 	margin-bottom: 20px;
 }
+.recap{
+	text-align: -webkit-center;
+}
 .c-inputs button{
 	width:200px;
 	height: 40px;
@@ -161,6 +163,7 @@
 	margin: 20px 0 0 20px ;
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
 	letter-spacing: 1px;
+	transform: translateX(25%);
 }
 .c-inputs input:focus{
 	border-bottom: 1px solid #1c2237;
@@ -205,8 +208,9 @@
 	}
 	.contact-wrapper{
 		margin: 0;
+		padding-top: 100px;
 	}
-
+	
 	.contact-box{
 		width: 100%;
 		height: 100vh;
@@ -218,7 +222,7 @@
 		transform: translate(0,0);
 		width:100%;
 		margin: 0;
-		height: 100vh;
+		height: 80vh;
 		box-sizing: border-box;
 	}
 	#contact-box{

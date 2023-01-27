@@ -119,6 +119,7 @@ export default function Contact () {
                     <CustomEmailInput type="email" placeholder="example@gmail.com" name="email" />
                     <CustomMessageInput type="text" placeholder="Write Message" name="message" />
                     {/* <textarea type="text" placeholder="Write message" name="message" required="required"></textarea>  */}
+                    <div className='recap'>
                     <ReCAPTCHA
                       sitekey="6LdHd_YeAAAAAAZ_g5WN2b33R31LQ_got7FSGL-5"
                       onChange={(value) => {
@@ -127,6 +128,7 @@ export default function Contact () {
                         props.setSubmitting(false);
                       }}
                     />
+                    </div>
                     <button type='submit'>{props.isSubmitting ? 'SENDING...' : 'SEND'}</button>
                   </Form>
                 </div>)}
