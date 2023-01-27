@@ -45,7 +45,7 @@ overflow: hidden;
 }
 
 .home__hero-text-wrapper {
-  padding-right: 50px;
+  padding: 0;
 }
 
 .darkBg {
@@ -87,13 +87,16 @@ overflow: hidden;
 
 #about{
   padding-top: 15%;
+  
 }
 
-#about_logo {
+#company-logo {
  transform: translate(50px, -200px);
  scale: 0.7;
 }
-
+#aboutText{
+  padding: 0 35px 0 0;
+}
 
 #mission{
   padding-top: 15%;
@@ -111,14 +114,16 @@ overflow: hidden;
   transform: translate(50px,-50px);
 }
 
+#valuesText{
+  padding-top: 20px;
+}
+
 .values-list{
   margin-left: 40px;
 }
 
 @media screen and (max-width: 1280px) {
-  .home__hero-text-wrapper {
-    padding: 0px 40px 40px 0px;
-  }
+
 
   .home__hero-img-wrapper {
     transform: scale(0.75);

@@ -28,14 +28,14 @@ import values from '../assets/values.svg';
                     <h1 className="heading"> About Us  </h1>
                     <p className="home__hero-subtitle">
                       Envy Enterprises (Pty) Ltd. is a tech holdings company that is comprised of cutting edge subsidiaries solving problems across multiple industries.<br /><br />
-                      We focus mainly on e-Health, using the latest technologies to solve problems in healthcare systems. We also provide solutions and/or products in the following realms: CyberSecurity, A.I, Cloud and Data Mining.
+                      We focus mainly on e-Health, using the latest technologies to solve problems in healthcare systems. We also provide services and/or products in the following realms: Artificial Intelligence, CyberSecurity, Blockchain, Cloud Computing and Data Analytics.
                     </p>
                   </div>
                 </div>
               </div>
               <div className="col">
                 <div className='home__hero-img-wrapper'>
-                  <img src={envyLogo} alt='dashboard' className='home__hero-img' id='about_logo'/>
+                  <img src={envyLogo} alt='dashboard' className='home__hero-img' id='company-logo'/>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@ import values from '../assets/values.svg';
                         <li>Ethics</li>
                       </ul>
                       <br />
-                      We uphold integrity by implementing ethical data management standards and policies.
+                      We uphold integrity by implementing ethical data management standards and policies in our products and services.
                     </p>
                   </div>
                 </div>
