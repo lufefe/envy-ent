@@ -50,7 +50,7 @@ function Portfolio() {
         {/* <div className='home__hero-img-wrapper'>
           <img src={envyLogo} alt='dashboard' className='home__hero-img' style = {{'margin-top': "-70px"}} />
         </div> */}
-        <h1>Blockchain</h1>
+        <h1>cryptocurrency</h1>
 
         <PortfolioItem 
           src={allcrypto}
