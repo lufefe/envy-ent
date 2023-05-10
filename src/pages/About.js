@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../App.css';
 import './About.css';
-import envyLogo from '../assets/envylogonameblack.png'
+import envyLogo from '../assets/envylogoonly.png'
 import mission from '../assets/mission.svg';
 import values from '../assets/values.svg';
 
@@ -14,7 +14,7 @@ import values from '../assets/values.svg';
     <>
      {window.scrollTo({ top: 0, left: 100, behavior: 'smooth' })}
     <Helmet>
-      <title>About | Envy Enterprises (Pty) Ltd.</title>
+      <title>About | Invidum Technologies (Pty) Ltd.</title>
     </Helmet>
     
     <div className="about-page">
@@ -27,7 +27,7 @@ import values from '../assets/values.svg';
                   <div className='top-line'>
                     <h1 className="heading"> About Us  </h1>
                     <p className="home__hero-subtitle">
-                      Envy Enterprises (Pty) Ltd. is a tech holdings company that is comprised of cutting edge subsidiaries solving problems across multiple industries.<br /><br />
+                      Invidum Technologies (Pty) Ltd. is a tech holdings company that is comprised of cutting edge subsidiaries solving problems across multiple industries.<br /><br />
                       We focus mainly on e-Health, using the latest technologies to solve problems in healthcare systems. We also provide services and/or products in the following realms: Artificial Intelligence, CyberSecurity, Blockchain, Cloud Computing and Data Analytics.
                     </p>
                   </div>

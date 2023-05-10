@@ -12,7 +12,7 @@ function Home() {
     <div>
       {window.scrollTo({ top: 0, left: 100, behavior: 'smooth' })}
       <Helmet>
-        <title>Home | Envy Enterprises (Pty) Ltd.</title>
+        <title>Home | Invidum Technologies (Pty) Ltd.</title>
       </Helmet>
       <HeroSection/>
       <Vision/>

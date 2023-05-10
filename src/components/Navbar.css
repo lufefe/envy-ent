@@ -41,8 +41,8 @@
   }
 
   .navbar-logo > img{
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
   }
   
   .nav-menu {
@@ -55,7 +55,7 @@
     justify-content: end;
     margin-right: 1rem;
     height: inherit;
-    font-size: smaller;
+    font-size: 15px;
   }
   
   .nav-item {
@@ -107,7 +107,7 @@
     }
   
     .nav-menu.active {
-      background: #242222;
+      background: #11365f;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -151,14 +151,14 @@
       position: absolute;
       top: 0;
       right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
+      transform: translate(-100%, 50%);
+      font-size: 1.5rem;
       cursor: pointer;
     }
   
     .fa-times {
       color: #fff;
-      font-size: 2rem;
+      font-size: 1rem;
     }
   
     .nav-links-mobile {
@@ -178,7 +178,7 @@
   
     .nav-links-mobile:hover {
       background: #fff;
-      color: #242424;
+      color: #310505;
       transition: 250ms;
     }
   }

@@ -7,12 +7,14 @@ import blorema from '../assets/blorema.png';
 import vetrema from '../assets/vtrm_logo.png';
 import patrema from '../assets/ptrm_trans.png';
 import allcrypto from '../assets/allcrypto24.png';
+import invidalytics from '../assets/INVIDAAnalyticS.png';
+
 
 function Portfolio() {
   return (
 
     <><Helmet>
-      <title>Portfolio | Envy Enterprises (Pty) Ltd.</title>
+      <title>Portfolio | Invidum Technologies (Pty) Ltd.</title>
     </Helmet>
     <div className='portfolio-compensation'></div>
     <div className="portfolio-container">
@@ -60,6 +62,17 @@ function Portfolio() {
           founded='2022'
           vision='Providing the latest cryptocurrency news summerized at your convenience.'
           description='allcrypto24 is a 24 hour news update website that aggregates the most relevant and latest cryptocurrency articles from credible sources.' />
+
+          <h1>Data Analytics</h1>
+
+        <PortfolioItem 
+          src={invidalytics}
+          url='https://allcrypto24.com' 
+          ceo='TBA'
+          hq='Johannesburg, South Africa'
+          founded='2024'
+          vision='Providing data management services to ensure your data is securely stored and managed efficiently throughout its life cycle.'
+          description='Invidalytics is a data analytics firm focusing on providing the latest data services.' />
 
         </div>
       </div>

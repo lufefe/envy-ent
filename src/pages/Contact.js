@@ -66,7 +66,7 @@ export default function Contact () {
 
     <>
     <Helmet>
-      <title>Contact | Envy Enterprises (Pty) Ltd.</title>
+      <title>Contact | Invidum Technologies (Pty) Ltd.</title>
     </Helmet>
     <div className='contact-compensation'></div>
     <div className='contact-wrapper'>
