@@ -92,8 +92,10 @@ a {
        
     }
     .main-col-left{
-        font-size: 1.5rem;
-        width: 100%;
+        margin-top: 1.2rem;
+        display: flex;
+        justify-content:center;
+        min-width: 100%;
     }
 
     .main-col-right {

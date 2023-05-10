@@ -88,7 +88,7 @@ const Footer = () => {
                 To top
               </Button>
             </div>
-            <small className='website-rights'>Envy Enterprises (Pty) Ltd. © 2021</small>
+            <small className='website-rights'>Invidum Technologies (Pty) Ltd. © 2021</small>
             <div className='social-icons'>
               <Link
                 className='social-icon-link facebook'
