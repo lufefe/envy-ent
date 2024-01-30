@@ -7,7 +7,7 @@ import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from 'react-google-recaptcha'
 
-const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1421.9045677741533!2d28.050394312627127!3d-26.099731795514508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95733078e3703f%3A0x5c27913c1abd4efe!2s77%20Grayston%20Dr%2C%20Morningside%2C%20Sandton%2C%202057!5e0!3m2!1sen!2sza!4v1621199802241!5m2!1sen!2sza" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'; 
+const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1421.9045677741533!2d28.050394312627127!3d-26.099731795514508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95733078e3703f%3A0x5c27913c1abd4efe!2s77%20Grayston%20Dr%2C%20Morningside%2C%20Sandton%2C%202057!5e0!3m2!1sen!2sza!4v1621199802241!5m2!1sen!2sza" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>'; 
 
 function Iframe(props) {
     return (<div dangerouslySetInnerHTML={ {__html:  props.iframe?props.iframe:""}} />);
@@ -20,6 +20,7 @@ const CustomTextInput = ({label, ...props}) => {
   return(
     <>
       {window.scrollTo({ top: 0, left: 100, behavior: 'smooth' })}
+      
       {meta.touched && meta.error ? (
       <div className="error">{meta.error}</div>) : null}
       <input {...field}{...props}/>

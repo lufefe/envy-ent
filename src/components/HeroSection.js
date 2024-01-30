@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import './HeroSection.css';
 import videoBg from '../assets/video7.mp4'
-import ReactTypingEffect from 'react-typing-effect';
+// import ReactTypingEffect from 'react-typing-effect';
 
 function HeroSection() {
     return (

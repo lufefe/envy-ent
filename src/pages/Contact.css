@@ -48,7 +48,7 @@
 	transition: all ease 0.3s;
 }
 .contact-box{
-	background: linear-gradient(45deg, #FF9811 00%, #FF5023 180%);
+	background: linear-gradient(45deg, #424445 00%, #4b5b5d 180%);
 	width: 530px;
 	display: flex;
 	flex-direction: column;

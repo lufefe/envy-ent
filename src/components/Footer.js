@@ -53,29 +53,25 @@ const Footer = () => {
           <div className='footer-link-wrapper'>
             <div className='footer-link-items'>
               <h2>Products</h2>
-              <a href='https://blorema.co.za' target='_blank' rel="noopener noreferrer">Blorema</a>
-              <a href='https://allcrypto24.com' target='_blank' rel="noopener noreferrer">allcrypto24</a>
-              {/* <Link to='/'>Patrema &copy;</Link>
-              <Link to='/'>Vetrema &copy;</Link> */}
+              <Link to='/portfolio'>Subsidiaries</Link>
+
             </div>
 
             <div className='footer-link-items'>
               <h2>Support</h2>
-              <Link to='/contact'>Contact Us</Link>
+              <Link to='/contact' onClick={ToTop}>Contact Us</Link>
               <a href='https://sacoronavirus.co.za' target='_blank' rel="noopener noreferrer">Covid-19</a>
             </div>
           </div>
           <div className='footer-link-wrapper'>
             <div className='footer-link-items'>
               <h2>Company</h2>
-              <Link to='#'>Careers</Link>
               <Link to='#'>Legal</Link>
               <Link to='#'>Privacy Policy</Link>
             </div>
             <div className='footer-link-items'>
               <h2>Resources </h2>
               <Link to='#'>News</Link>
-              <Link to='#'>Blog</Link>
               <Link to='#'>e-Health</Link>
             </div>
           </div>

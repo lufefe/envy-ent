@@ -8,11 +8,12 @@ function PortfolioItem(props) {
             <div className="portfolio-inner">
               <div className="sub-logo">
                 <a href={props.url} target='_blank' rel="noopener noreferrer">
-                  <img src={props.src} alt="subsidiary" className="sub-logo-image" />
+                  <img src={props.src} alt="subsidiary logo" className="sub-logo-image" />
                 </a>
               </div>
               <div className="sub-description">
                 <p className="sub-text">
+                  <span>Name</span> | {props.company} <br /><br />
                   <span>CEO</span> | {props.ceo} <br /><br />
                   <span> HEADQUARTERS </span>| {props.hq}<br /><br />
                   <span>FOUNDED </span>| {props.founded} <br /><br />

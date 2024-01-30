@@ -12,12 +12,15 @@ import values from '../assets/values.svg';
   return(
     
     <>
-     {window.scrollTo({ top: 0, left: 100, behavior: 'smooth' })}
+     
     <Helmet>
       <title>About | Invidum Technologies (Pty) Ltd.</title>
     </Helmet>
+
+    {window.scrollTo({ top: 0, left: 100, behavior: 'smooth' })}
     
     <div className="about-page">
+      
         <div className='about-compensation'></div>
         {/* About */}
         <div className="home__hero-section darkBg" id = "about">
@@ -28,7 +31,7 @@ import values from '../assets/values.svg';
                     <h1 className="heading"> About Us  </h1>
                     <p className="home__hero-subtitle">
                       Invidum Technologies (Pty) Ltd. is a tech holdings company that is comprised of cutting edge subsidiaries solving problems across multiple industries.<br /><br />
-                      We focus mainly on e-Health, using the latest technologies to solve problems in healthcare systems. We also provide services and/or products in the following realms: Artificial Intelligence, CyberSecurity, Blockchain, Cloud Computing and Data Analytics.
+                      We focus mainly on e-Health, using the latest technologies to solve problems in healthcare. We also provide services and/or products in the following realms: Artificial Intelligence, CyberSecurity, Blockchain and Cryptocurreny, Cloud Computing, Data Analytics, and Generic IT Services.
                     </p>
                   </div>
                 </div>
@@ -78,9 +81,10 @@ import values from '../assets/values.svg';
                         <li>Integrity</li>
                         <li>Innovation</li>
                         <li>Ethics</li>
+                        <li>Empowerment</li>
                       </ul>
                       <br />
-                      We uphold integrity by implementing ethical data management standards and policies in our products and services.
+                      We uphold integrity by implementing ethical practices and policies in our innovative products and services to empower the next generation.
                     </p>
                   </div>
                 </div>
