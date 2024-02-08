@@ -5,7 +5,7 @@ import HeroSection from '../components/HeroSection';
 import Vision from '../components/Vision';
 import Philanthropy from '../components/Philanthropy';
 import Cards from '../components/Cards';
-
+import Services from '../components/Services'
 
 function Home() {
   return (
@@ -16,6 +16,7 @@ function Home() {
       </Helmet>
       <HeroSection/>
       <Vision/>
+      <Services/>
       <Philanthropy/>
       <Cards/>
     </div>

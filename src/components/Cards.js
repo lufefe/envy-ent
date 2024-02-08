@@ -2,6 +2,7 @@ import React from 'react';
 import './Cards.css';
 import '../App.css';
 import CardItem from './CardItem';
+import ceo from '../assets/director_square3.jpg'
 
 function Cards() {
   return (
@@ -11,29 +12,29 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
           <CardItem
-              src="https://images.generated.photos/17MKKrN-NRWAWW6pvM8jKEmVuW8T84fM7qrGXAsnysE/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MjQwODQ1LmpwZw.jpg"
-              text='Asavela Junction'
+              src={ceo}
+              text='Ayabonga Jumba'
               label='Director'
               path='https://www.linkedin.com/in/ayabonga-jumba/'
             />
             <CardItem
               src='https://images.generated.photos/YLEhKp8QcyZeVpv_UETPCiE34LXxkuEX7NBVP6IoIec/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODE1NDQxLmpwZw.jpg'
-              text='Cynthia Beck'
-              label='CIO'
-      
+              text='TBC'
+              label='CFO'
+              path="#"
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
               src='https://images.generated.photos/elnBP8vDuvtqPs4Zs5KKMsoKW_pp_OatG0Xoaa0m88I/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTY3MTU4LmpwZw.jpg'
-              text='Nosipho Swazi'
+              text='TBC'
               label='CTO'
           
             />
            
             <CardItem
               src='https://images.generated.photos/xUzsaeixbYIOcConYZmObLVivfAZmUtW4lznNkkzq9g/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTY1OTg2LmpwZw.jpg'
-              text='Gloria Finn'
+              text='TBC'
               label='Non-Executive Director'
             />
           </ul>

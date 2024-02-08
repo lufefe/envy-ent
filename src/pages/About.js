@@ -30,8 +30,8 @@ import values from '../assets/values.svg';
                   <div className='top-line'>
                     <h1 className="heading"> About Us  </h1>
                     <p className="home__hero-subtitle">
-                      Invidum Technologies (Pty) Ltd. is a tech holdings company that is comprised of cutting edge subsidiaries solving problems across multiple industries.<br /><br />
-                      We focus mainly on e-Health, using the latest technologies to solve problems in healthcare. We also provide services and/or products in the following realms: Artificial Intelligence, CyberSecurity, Blockchain and Cryptocurreny, Cloud Computing, Data Analytics, and Generic IT Services.
+                      Invidum Technologies (Pty) Ltd. is a tech services and holdings company that is comprised of cutting edge subsidiaries solving problems across multiple industries.<br /><br />
+                      We focus mainly on e-Health, using the latest technologies to solve problems in healthcare. We also provide services and/or products in the following realms: Artificial Intelligence, CyberSecurity, Blockchain and Cryptocurrency, Cloud Computing, Data Analytics, and Generic IT Services.
                     </p>
                   </div>
                 </div>

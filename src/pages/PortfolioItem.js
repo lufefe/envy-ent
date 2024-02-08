@@ -13,10 +13,10 @@ function PortfolioItem(props) {
               </div>
               <div className="sub-description">
                 <p className="sub-text">
-                  <span>Name</span> | {props.company} <br /><br />
-                  <span>CEO</span> | {props.ceo} <br /><br />
-                  <span> HEADQUARTERS </span>| {props.hq}<br /><br />
-                  <span>FOUNDED </span>| {props.founded} <br /><br />
+                  <span id='portfolio-name'>NAME </span> | {props.company} <br /><br />
+                  <span id='portfolio-ceo'>CEO </span> | {props.ceo} <br /><br />
+                  <span id='portfolio-hq'> HEADQUARTERS </span> | {props.hq}<br /><br />
+                  <span id='portfolio-foundyear'>FOUNDED </span> | {props.founded} <br /><br />
 
                   <span>VISION</span>  | {props.vision}<br /><br />
 

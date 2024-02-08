@@ -1,6 +1,6 @@
 import React from 'react'
 import './Vision.css';
-import vision from '../assets/jellyfish-svgrepo.svg'
+import vision from '../assets/invi_dumlogosplit.png'
 
 function Vision() {
     return (

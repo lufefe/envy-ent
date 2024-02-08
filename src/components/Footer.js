@@ -52,8 +52,8 @@ const Footer = () => {
         <div className='footer-links'>
           <div className='footer-link-wrapper'>
             <div className='footer-link-items'>
-              <h2>Products</h2>
-              <Link to='/portfolio'>Subsidiaries</Link>
+              <h2>Subsidiaries</h2>
+              <Link to='/portfolio'>Portfolio</Link>
 
             </div>
 
